@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像ギャラリー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- タイトルバー -->
+    <header class="navbar">
+	<img src="images/title.png" alt="制作サンプル" class="title-image">
+    </header>
+
+    <div class="gallery">
+        <img src="images/img1.jpg" class="thumbnail" onclick="openModal(this)">
+        <img src="images/img2.png" class="thumbnail" onclick="openModal(this)">
+        <img src="images/img3.png" class="thumbnail" onclick="openModal(this)">
+        <img src="images/img4.png" class="thumbnail" onclick="openModal(this)">
+        <img src="images/img5.png" class="thumbnail" onclick="openModal(this)">
+        <img src="images/img6.png" class="thumbnail" onclick="openModal(this)">
+        <img src="images/img7.png" class="thumbnail" onclick="openModal(this)">
+    </div>
+
+    <!-- モーダル表示 -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
